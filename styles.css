@@ -1,11 +1,11 @@
-/* Schafari's Butchery — red & green theme */
+/* Schafari's Butchery — solid green theme */
 :root{
   --max-width:1100px;
   --accent:#b80f0f; /* meat red */
   --accent-dark:#7a0202;
-  --bg:#1a7f1a; /* solid green background */
-  --card:#1a7f1a; /* solid green for cards */
-  --muted:#ffffff; /* text stays white */
+  --bg:#1a7f1a; /* solid green background for main content */
+  --card:#1a7f1a; /* solid green for cards, hero, features */
+  --muted:#ffffff; /* text white */
   --radius:10px;
   --gap:18px;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
@@ -33,7 +33,7 @@ body{
 
 /* header */
 .site-header{
-  background:#000000; /* black header */
+  background:#000000; /* black header/nav area */
   border-bottom:4px solid var(--accent-dark);
   position:sticky;
   top:0;
@@ -81,7 +81,7 @@ body{
 .hero{
   padding:40px 0;
   border-bottom:1px solid rgba(255,255,255,0.1);
-  background: var(--bg);
+  background: var(--card); /* solid green */
 }
 .hero-inner{
   display:flex;
@@ -121,7 +121,7 @@ body{
 }
 
 /* features */
-.features{padding:36px 0; background:var(--bg);}
+.features{padding:36px 0; background:var(--card);}
 .section-title{margin:0 0 18px;font-size:20px;color:var(--muted)}
 .feature-grid{
   display:grid;
@@ -137,6 +137,9 @@ body{
   gap:10px;
   grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
   margin-top:12px;
+  background:var(--card);
+  padding:12px;
+  border-radius:10px;
 }
 .gallery-grid img{
   width:100%;
@@ -149,7 +152,7 @@ body{
 }
 
 /* about / contact */
-.about, .contact{padding:32px 0; background:var(--bg);}
+.about, .contact{padding:32px 0; background:var(--card);}
 .contact-grid{display:grid;grid-template-columns:1fr 420px;gap:18px;align-items:start}
 .contact-details p{margin:6px 0;color:var(--muted)}
 
