@@ -16,7 +16,8 @@
 html,body{height:100%}
 body{
   margin:0;
-  background:var(--bg);
+  background: var(--bg) url("images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
   color:var(--muted);
   line-height:1.5;
   -webkit-font-smoothing:antialiased;
