@@ -1,11 +1,11 @@
-/* Schafari's Butchery — solid green theme */
+/* Schafari's Butchery — green theme */
 :root{
   --max-width:1100px;
   --accent:#b80f0f; /* meat red */
   --accent-dark:#7a0202;
-  --bg:#1a7f1a; /* solid green background for main content */
-  --card:#1a7f1a; /* solid green for cards, hero, features */
-  --muted:#ffffff; /* text white */
+  --bg:#1a7f1a; /* main green background */
+  --card:#1a7f1a; /* green for cards, hero, features */
+  --muted:#ffffff; /* white text */
   --radius:10px;
   --gap:18px;
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
@@ -33,7 +33,7 @@ body{
 
 /* header */
 .site-header{
-  background:#000000; /* black header/nav area */
+  background:var(--card); /* green instead of black */
   border-bottom:4px solid var(--accent-dark);
   position:sticky;
   top:0;
@@ -62,7 +62,7 @@ body{
   color:var(--muted);
   padding:8px 12px;
   border-radius:6px;
-  background:#000000; /* black nav buttons */
+  background:var(--card); /* green nav buttons */
   border:1px solid rgba(255,255,255,0.1);
 }
 .main-nav a:hover{background:rgba(184,15,15,0.12); color:white; transform:translateY(-1px);}
@@ -81,7 +81,7 @@ body{
 .hero{
   padding:40px 0;
   border-bottom:1px solid rgba(255,255,255,0.1);
-  background: var(--card); /* solid green */
+  background: var(--card); /* green */
 }
 .hero-inner{
   display:flex;
@@ -192,7 +192,7 @@ body{
     position:absolute;
     top:72px;
     right:18px;
-    background:#000000; /* black nav dropdown */
+    background:var(--card); /* green dropdown nav */
     padding:12px;
     border-radius:8px;
     display:none;
